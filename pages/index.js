@@ -16,7 +16,7 @@ export default function Home() {
           className="bg-[url('../public/333950.jpg')] bg-cover bg-bottom flex justify-center items-center flex-col"
         >
           <div className="absolute mb-96">
-            <Image src="/../public/logo.png"  width={500} height={500} />
+            <Image src="https://i.postimg.cc/3xtGCbQH/TY-1.png"  width={500} height={500} />
           </div>
           <form action="" className="flex">
             <div>
