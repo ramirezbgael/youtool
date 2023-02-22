@@ -13,25 +13,69 @@ export default function Home() {
       <main>
         <div
           style={{ height: "100vh" }}
-          className="bg-[url('../public/333950.jpg')] bg-cover bg-bottom flex justify-center items-center flex-col"
+          className="bg-[url('../public/background.png')] bg-bottom bg-no-repeat flex justify-center items-center flex-col"
         >
-          <div className="absolute mb-96">
-            <Image src="https://i.postimg.cc/3xtGCbQH/TY-1.png"  width={500} height={500} />
+          <div className="absolute mb-96 drop-shadow-md">
+            <Image
+              src="https://i.postimg.cc/3xtGCbQH/TY-1.png"
+              width={450}
+              height={200}
+            />
           </div>
-          <form action="" className="flex">
+          <form action="" className="flex drop-shadow-sm">
             <div>
-              <input 
-              placeholder='Ash Ketchum' 
-              style={{height:'5vh', width:'20vw', borderRadius:'50px 0px 0px 50px', padding:'20px'}} 
-              type="text"
+              <input
+                //come on, search a video
+                placeholder="Do you have a link? "
+                style={{
+                  height: "5vh",
+                  width: "30vw",
+                  borderRadius: "20px 0px 0px 20px",
+                  padding: "20px",
+                }}
+                className="focus-visible:outline-none"
+                type="text"
               />
             </div>
             <div>
               <button
-                style={{height:'5vh', width:'4vw', backgroundColor:'white', borderRadius:'0px 50px 50px 0px'}}
-                className="hover:bg-slate-300"
+                style={{
+                  height: "5vh",
+                  width: "3vw",
+                  backgroundColor: "#154685",
+                  borderRadius: "0px 20px 20px 0px",
+                }}
+                className="hover:bg-slate-300 flex justify-center items-center font-sans font-bold text-xl m-0"
               >
-                <p>Go</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="30"
+                  height="30"
+                  viewBox="0,0,256,256"
+                >
+                  <g
+                    fill="#ffffff"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style={{mixBlendMode: "normal"}}
+                  >
+                    <g transform="scale(5.12,5.12)">
+                      <path d="M21,3c-9.39844,0 -17,7.60156 -17,17c0,9.39844 7.60156,17 17,17c3.35547,0 6.46094,-0.98437 9.09375,-2.65625l12.28125,12.28125l4.25,-4.25l-12.125,-12.09375c2.17969,-2.85937 3.5,-6.40234 3.5,-10.28125c0,-9.39844 -7.60156,-17 -17,-17zM21,7c7.19922,0 13,5.80078 13,13c0,7.19922 -5.80078,13 -13,13c-7.19922,0 -13,-5.80078 -13,-13c0,-7.19922 5.80078,-13 13,-13z"></path>
+                    </g>
+                  </g>
+                </svg>
               </button>
             </div>
           </form>
